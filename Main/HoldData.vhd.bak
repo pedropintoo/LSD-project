@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity HoldData is
+   port(clk			 : in std_logic;
+		  enable		 : in std_logic;
+		  inData  : in  std_logic_vector(7 downto 0);
+		  outData : out std_logic_vector(7 downto 0));
+end HoldAddress;  
+
+architecture Behavioral of HoldAddress is
+	signal s_outData : std_logic_vector(7 downto 0);
+begin
+
+	process(clk)
+	begin
+		if (rising_edge(clk)) then
+			if (enable = '1') then
+				s_outData <= inData;
+			end if;
+		end if;
+	end process;
+	
+	outData <= s_outData;
+	
+end Behavioral;

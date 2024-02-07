@@ -1,0 +1,25 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/NoisyTriangSignal_ROM_256x8.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/AddressGenerator.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/Bin2BCDSigned_8bits.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/SignMagnitudeBCDDisplay.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/Bin7SegDecoder.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/Signal_Filter.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/DebounceUnit.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/PulseGeneratorN.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/FilterSignal_RAM_256x8.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/DelayLineRegister.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/ArithmeticUnit.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/TimerN.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/ControlUnitFSM.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/HoldData.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/vga_config.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/SignMagnitudeVGA.vhd}
+vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/vga.vhd}
+

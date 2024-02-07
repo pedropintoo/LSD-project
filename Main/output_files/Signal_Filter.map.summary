@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jun 05 13:31:34 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Signal_Filter
+Top-level Entity Name : Signal_Filter
+Family : Cyclone IV E
+Total logic elements : 13,854
+    Total combinational functions : 7,669
+    Dedicated logic registers : 6,489
+Total registers : 6489
+Total pins : 96
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

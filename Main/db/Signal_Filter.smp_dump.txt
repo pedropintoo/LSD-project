@@ -1,0 +1,13 @@
+
+State Machine - |Signal_Filter|ControlUnitFSM:controlUnit|s_currentState
+Name s_currentState.STOP_FILTER s_currentState.STOP_COPY s_currentState.EXECUTE_FILTER s_currentState.EXECUTE_COPY s_currentState.STOP_SHOW s_currentState.SHOW_DATA s_currentState.RESET_SHOW s_currentState.READY s_currentState.RESET_RAM s_currentState.RESET_GLOBAL 
+s_currentState.RESET_GLOBAL 0 0 0 0 0 0 0 0 0 0 
+s_currentState.RESET_RAM 0 0 0 0 0 0 0 0 1 1 
+s_currentState.READY 0 0 0 0 0 0 0 1 0 1 
+s_currentState.RESET_SHOW 0 0 0 0 0 0 1 0 0 1 
+s_currentState.SHOW_DATA 0 0 0 0 0 1 0 0 0 1 
+s_currentState.STOP_SHOW 0 0 0 0 1 0 0 0 0 1 
+s_currentState.EXECUTE_COPY 0 0 0 1 0 0 0 0 0 1 
+s_currentState.EXECUTE_FILTER 0 0 1 0 0 0 0 0 0 1 
+s_currentState.STOP_COPY 0 1 0 0 0 0 0 0 0 1 
+s_currentState.STOP_FILTER 1 0 0 0 0 0 0 0 0 1 

@@ -1,0 +1,78 @@
+# Reading pref.tcl
+# do Signal_Filter_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/Quartu_Prime_Lite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/ControlUnitFSM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:49:51 on Jun 05,2023
+# vcom -reportprogress 300 -2008 -work work C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/ControlUnitFSM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ControlUnitFSM
+# -- Compiling architecture Behavioral of ControlUnitFSM
+# End time: 12:49:51 on Jun 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/ControlUnitFSM_Tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:50:43 on Jun 05,2023
+# vcom -reportprogress 300 -work work C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/ControlUnitFSM_Tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlUnitFSM_Tb
+# -- Compiling architecture Stimulus of ControlUnitFSM_Tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity ControlUnitFSM
+# End time: 12:50:43 on Jun 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/ControlUnitFSM_Tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:50:44 on Jun 05,2023
+# vcom -reportprogress 300 -work work C:/Users/pedro/OneDrive - Universidade de Aveiro/Universidade/1ano/2semestre/LSD/Projeto/Main/ControlUnitFSM_Tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ControlUnitFSM_Tb
+# -- Compiling architecture Stimulus of ControlUnitFSM_Tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity ControlUnitFSM
+# End time: 12:50:44 on Jun 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.controlunitfsm_tb(stimulus)
+# vsim work.controlunitfsm_tb(stimulus) 
+# Start time: 12:50:52 on Jun 05,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.controlunitfsm_tb(stimulus)
+# Loading work.controlunitfsm(behavioral)
+add wave -position end  sim:/controlunitfsm_tb/s_clk
+add wave -position end  sim:/controlunitfsm_tb/s_startStop
+add wave -position end  sim:/controlunitfsm_tb/s_reset
+add wave -position end  sim:/controlunitfsm_tb/s_filter
+add wave -position end  sim:/controlunitfsm_tb/s_resetRAM
+add wave -position end  sim:/controlunitfsm_tb/s_showData
+add wave -position end  sim:/controlunitfsm_tb/s_addressROM
+add wave -position end  sim:/controlunitfsm_tb/s_start_on
+add wave -position end  sim:/controlunitfsm_tb/s_filter_on
+add wave -position end  sim:/controlunitfsm_tb/s_reset_on
+add wave -position end  sim:/controlunitfsm_tb/s_resetRAM_on
+add wave -position end  sim:/controlunitfsm_tb/s_showData_on
+add wave -position end  sim:/controlunitfsm_tb/s_stop_on
+add wave -position end  sim:/controlunitfsm_tb/s_displayOutput_on
+add wave -position end  sim:/controlunitfsm_tb/s_addressGen_on
+run
+# End time: 13:25:14 on Jun 05,2023, Elapsed time: 0:34:22
+# Errors: 0, Warnings: 0
